@@ -1,0 +1,582 @@
+/*////////// **************** ACCUEIL.HTML **************** //////////*/
+
+
+/*////////// Apply everywhere //////////*/
+
+* {
+  box-sizing: border-box;
+  margin : 0;
+}
+
+/*//////////   Style the header  //////////*/
+
+.header_container{
+  display : flex ;  
+  flex-direction : row;
+}
+
+.logo_container {
+  width : 200px;
+  margin : auto;
+}
+.nav_container {
+  width : 100%;
+}
+
+#logo{
+  height : 150px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-left : 20px;
+}
+
+/*//____ Style the topnav ____ //*/
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  text-align:right;
+  padding : 12px ;
+  margin-top : 50px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  font-family : Montserrat ;
+  color: black;
+  text-align: center;
+  padding: 10px 13px;
+  font-size : 28px;
+  text-decoration: none;
+  transition: all ease-in-out 350ms;  
+}
+
+.topnav .online{
+  color : grey;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+opacity : 0.5;
+
+}
+
+/* Responsive Topnav */
+
+.active:hover {
+  background-color: #fff !important;
+}
+
+.icon:hover {
+  background-color: #fff !important;
+}
+
+.topnav .icon {
+  display: none;
+  background-color :transparent !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+@media screen and (max-width: 1200px) {
+
+  .topnav.responsive .icon {
+    margin-top : -200px;
+  }
+
+  .topnav.responsive a{
+    display : flex;
+    flex-direction : column;
+  }
+}
+
+
+/*////////// Style the background //////////*/
+
+.background{
+  background-image: url("https://wallup.net/wp-content/uploads/2019/09/455828-construction-work-building-job-profession-architecture-design-1.jpg");
+  background-size : 1450px;;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position :fixed;
+}
+
+.contact_background{
+  background-image: url("https://wallup.net/wp-content/uploads/2019/09/455828-construction-work-building-job-profession-architecture-design-1.jpg");
+  background-size : 1450px;;
+  height: 150px;
+  background-position : 0 -55px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position :fixed;
+}
+
+/*////////// Style the grey shape //////////*/
+
+#shape1{
+  height : 180px;
+  width : 100%;
+  background-color : #efe4da;
+  margin-top: 10px;
+  margin-bottom:5px;
+  font-family : montserrat;
+  text-align : center;
+}
+
+#shape1 h2 {
+  padding-top : 60px;
+  font-family : Anton;
+  font-weight : lighter;
+  font-size : 30px;
+}
+
+#shape1 a {
+  color : #f3c70f;
+}
+
+#shape1 a:visited {
+  /* color:rgb(138, 138, 241); */
+  color : #f3c70f;
+}
+
+/*////////// Style the map //////////*/
+
+.map{
+  padding-top : 5px;
+}
+
+
+iframe{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+iframe:hover{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+iframe{
+  transition:all 0.5s linear; 
+  -o-transition:all 0.5s linear; 
+  -moz-transition:all 0.5s linear; 
+  -webkit-transition:all 0.5s linear;
+}
+
+/*////////// Style the footer //////////*/
+
+
+footer {
+  background-color:rgb(14, 11, 11);
+  font-size:15px;
+  height : 100px;
+  padding-top : 30px;
+}
+
+.footer_container{
+  display : flex;
+  flex-direction : row;
+}
+
+/* Compagny name */
+
+.compagny_name{
+  /* background-color: blue; */
+  width : 15%;
+}
+
+.parede{
+  font-family : Anton ;
+  font-size: 30px;
+  text-align : left;
+  color : white;
+  align-items: center;
+  text-align : center;  
+  justify-content : center;
+  padding-left : 30px;
+  }
+  
+/* Sitemap */
+
+.sitemap{
+  display : flex;
+  flex-direction : row;
+  gap : 30px;
+  align-items: center;
+  text-align : center;  
+  justify-content : center;
+  /* background-color: red; */
+  width : 70%;
+}
+
+.sitemap a {
+  text-decoration: none;
+  font-family : Helvetica;
+  color : white;
+  font-weight: bold;
+  transition: all ease-in-out 350ms;  
+
+}
+
+.sitemap a:hover {
+ color : rgb(197, 196, 196);
+}
+
+@media screen and (max-width: 1000px) {
+  .sitemap a {
+    display: none;
+  }
+  }
+
+/* Social */
+
+.social{
+  display : flex;
+  flex-direction : row;
+  /* background-color: green; */
+  width : 15%;
+  font-size : 25px;
+  align-items: center;
+  text-align : center;  
+  justify-content : center;
+  gap : 15px;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: white;
+  background: #3b5998;
+  width : 30px;
+  height : 30px;
+  text-align : center;
+  padding-top: 3px;
+  transition: all ease-in-out 400ms;
+
+}
+.fa-facebook:hover {
+  background: rgb(197, 196, 196);
+  
+}
+.fa-google {
+  color: white;
+  background: rgb(199, 37, 37);
+  width : 30px;
+  height : 30px;
+  text-align : center;
+  padding-top: 3px;
+  transition: all ease-in-out 400ms;
+}
+
+.fa-google:hover {
+  background: rgb(197, 196, 196);
+  
+}
+
+.copyright{
+  font-family : Montserrat;
+  text-align : center;
+  font-size : 12px;
+  padding-top : 10px;
+  margin-bottom : 5px;
+
+}
+
+/*////////// **************** CONTACT.HTML **************** //////////*/
+
+.info_container{
+  display : flex;
+  flex-direction : row;
+}
+.contact_info_container{
+  height : 400px;
+  width : 1200px;
+  /* background-color : blue; */
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_form_container{
+  height : 400px;
+  width : 100%;
+  padding: 20px;
+
+}
+
+.contact_info{
+  background-color : white;
+  height : 300px;
+  width : 400px;
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  text-align: center;
+  line-height: 22px;
+}
+
+/* Contact_form */
+
+ 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#shape6{
+  height : 400px;
+  width : 100%;
+  background-color : #efe4da;
+  margin-top: 10px;
+  margin-bottom:5px;
+  font-family : montserrat;
+}
+
+
+/*////////// **************** REALISATIONS.HTML **************** //////////*/
+
+
+div#slider figure {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 0;
+}
+
+div#slider figure img {
+  width: 10%;
+  height: 600px;
+  float: left;
+  object-fit: cover;
+  object-position: center;
+}
+
+div#slider {
+  width: 95%;
+  margin-left:2.3%;
+  height: 600px;
+  overflow: hidden }
+  @keyframes slidy {
+  0% { left: 0%; }
+  5% { left: 0%; }
+  10% { left: -100%; }
+  15% { left: -100%; }
+  20% { left: -200%; }
+  25% { left: -200%; }
+  30% { left: -300%; }
+  35% { left: -300%; }
+  40% { left: -400%; }
+  45% { left: -400%; }
+  50% { left: -500%; }
+  55% { left: -500%; }
+  60% { left: -600%; }
+  65% { left: -600%; }
+  70% { left: -700%; }
+  75% { left: -700%; }
+  80% { left: -800%; }
+  85% { left: -800%; }
+  90% { left: -900%; }
+  95% { left: -900%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 1000%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 40s slidy infinite;
+  margin-top:20px;
+}
+.mh1{
+  font-family: "Gill Sans", sans-serif;
+  color: darkgray;
+  font-size: 80px;
+  margin-left: 2.5%;
+}
+
+#shape2{
+  height : 60px;
+  width : 100%;
+  background-color : #efe4da;
+  margin-top: 10px;
+  margin-bottom : 5px;
+}
+
+#shape3{
+  height : 30px;
+  width : 100%;
+  background-color : #efe4da;
+  margin-top: 15px;
+  margin-bottom:-10px;
+}
+
+/*////////// **************** EQUIPE.HTML **************** //////////*/
+
+.card {
+  width: 600px;
+  display: flex;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  border-radius: 5px;
+  height: 200px;}
+
+.container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.imgCard {
+  border-radius: 5px 5px 0 0;
+  width: 400px;
+  object-fit: cover;
+}
+  
+.bigContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 40px;
+  background-color: #efe4da;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#shapeEquipe{
+  background-color : #efe4da;
+  margin-top: 15px;
+  font-family : montserrat;
+}
+
+.bigContainer p{
+  text-align : center;
+}
+
+.bigContainer h4{
+  color: #a7917d;
+}
+
+
+/*////////// **************** PRESENTATION.HTML **************** //////////*/
+
+.presentation h3{
+  text-align:center;  
+  line-height : 25px;
+  font-weight: bold ;
+  margin-top:12px;
+  font-size: 25 px;
+}
+
+.presentation p{
+  text-align:center;  
+  justify-content: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-top : 20px;
+}
+
+#shape4{
+  height : 300px;
+  width : 100%;
+  background-color : #efe4da;
+  margin-top: 15px;
+  font-family : montserrat;
+  display : flex;
+  flex-direction   : column;
+  justify-content: center;
+}
+
+#shapeEquipe{
+
+  background-color : #efe4da;
+  margin-top: 25px;
+  font-family : montserrat;
+}
+
+.containerPres{
+  padding: 30px;
+  display: flex;
+  gap: 150px;
+}
+
+.titrePres{
+  font-size: 25px;
+  text-align: left;
+}
+
+.textePres{
+  background-color: white;
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.nomPres{
+  text-align: center;
+  font-size: 40px;
+}
+
+.card2 {
+
+  display: flex;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  border-radius: 5px;
+  height: 300px;
+}
+
+@media screen and (max-width: 900px) {
+  .presentation p {
+    display: none;
+  }
+  .presentation h3 {
+    display: none;
+  }
+  }
